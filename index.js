@@ -1180,7 +1180,7 @@ let allY = [];
 function createGraph(x, y) {
   $("#form").empty();
   $("#next").remove();
-  $("#form").html("You got a " + x);
+  // $("#form").html("You got a " + x);
 
   $("#testCanvas").css("display", "block");
   var canvas = $("#testCanvas")[0];
