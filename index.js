@@ -1,3 +1,9 @@
+// Please stay out
+// Do not read
+// Is a scary place
+// Very easy to get lost
+// Here be dragons
+
 let items = {
   hotDog: {
     id: "hotDog",
