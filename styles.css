@@ -1,0 +1,138 @@
+body {
+    font-family: "Roboto Slab", sans-serif;
+    background-color: rgb(250, 250, 243);
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    width: 100% !important;
+    overflow-x: hidden;
+}
+
+canvas {
+    margin: auto;
+    margin-top: 0px;
+}
+
+header {
+    overflow: hidden;
+    height: 400px;
+    width: 100vw;
+    background: black;
+    text-align: center;
+}
+
+header img {
+    object-fit: cover;
+    height: 400px;
+    opacity: 0.3;
+    margin: 0px;
+    width: 100%;
+}
+
+.header-text {
+    position: relative;
+    z-index: 10;
+    top: -75%;
+    color: beige;
+}
+
+.header-text h1 {
+    font-size: 70px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-text h2 {
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+button,
+input[type="button"] {
+    margin: 10px;
+    color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input,
+label {
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(27, 27, 90);
+}
+
+input[type="button"] {
+    background-color: rgb(209, 209, 255);
+    color: black;
+    border-style: none;
+    border-color: rgb(177, 177, 255);
+}
+
+#form {
+    text-align: center;
+    padding: 20px;
+    width: 80vw;
+    margin: auto;
+}
+
+.yesnotoggle {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-text h1 {
+        font-size: 35px;
+    }
+
+    .header-text h2 {
+        font-size: 15px;
+    }
+
+    header,
+    header img {
+        height: 200px;
+    }
+
+    canvas {
+        width: 90vw;
+        height: 90vw;
+    }
+}
+
+#next {
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+#progressBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+}
+
+#progressBar img {
+    width: 17vw;
+}
+
+#progressBar div {
+    overflow: hidden;
+    max-width: 100%;
+    width: 0%;
+    height: 100%;
+    object-fit: cover;
+    transition: width 0.1s linear 0s;
+}
